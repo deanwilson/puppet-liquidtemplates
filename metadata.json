@@ -1,6 +1,6 @@
 {
   "name": "deanwilson-liquidtemplates",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "deanwilson",
   "summary": "Puppet function for processing Liquid Templates",
   "license": "GPL-2.0",
