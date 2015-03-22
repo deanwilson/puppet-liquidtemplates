@@ -10,12 +10,15 @@ module Puppet::Parser::Functions
   EOD
   ) do |files|
 
+    raise Puppet::ParseError, 'No template file supplied to liquid_template' if files.empty?
+
     files.collect do |file|
       template_file = nil
 
+
       Puppet.debug "Processing #{file} with liquid_template"
 
-      template_file = Puppet::Parser::Files.find_template(file, self.compiler.environment.to_s)
+      template_file = Puppet::Parser::Files.find_template(file, self.compiler.environment)
       raise Puppet::ParseError, "Could not find template '#{file}'" unless template_file
 
       # expose our scope to the templates content.
