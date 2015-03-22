@@ -1,0 +1,14 @@
+{
+  "name": "deanwilson-liquidtemplates",
+  "version": "0.0.2",
+  "author": "deanwilson",
+  "summary": "Puppet function for processing Liquid Templates",
+  "license": "GPL-2.0",
+  "source": "https://github.com/deanwilson/puppet-liquidtemplates.git",
+  "project_page": "https://github.com/deanwilson/puppet-liquidtemplates.git",
+  "issues_url": "https://github.com/deanwilson/puppet-liquidtemplates/issues",
+  "description": "Puppet function for processing Liquid Templates",
+  "dependencies": [
+  
+  ]
+}
