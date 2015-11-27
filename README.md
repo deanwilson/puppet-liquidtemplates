@@ -10,7 +10,6 @@ allows you to write your templates using Liquid -
 
 And call them from your puppet modules -
 
-    cat << 'EOC' > liquidtest/manifests/init.pp
     class liquidtest {
 
       file { '/tmp/liquidtest':
@@ -20,10 +19,12 @@ And call them from your puppet modules -
 
     }
 
-using a templating engine that does not allow arbitrary ruby code to run.
-
 More details can be found in the
-[Liquid Templates in Puppet](http://www.unixdaemon.net/tools/puppet/liquid-templates-in-puppet-initial-release.html) blog post.
+[Liquid Templates in Puppet](http://www.unixdaemon.net/puppet/liquid-templates-in-puppet-initial-release/) blog post.
 
 Note:
 This function requires the liquid gem to be available on the puppetmaster. Which you are managing via puppet, right?
+
+### License ###
+
+GPL v2.0 - [Dean Wilson](http://www.unixdaemon.net)

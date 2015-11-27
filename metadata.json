@@ -1,6 +1,6 @@
 {
   "name": "deanwilson-liquidtemplates",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "deanwilson",
   "summary": "Puppet function for processing Liquid Templates",
   "license": "GPL-2.0",
@@ -10,5 +10,22 @@
   "description": "Puppet function for processing Liquid Templates",
   "dependencies": [
   
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    },
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "Fedora"
+    },
+    {
+      "operatingsystem": "CentOS"
+    }
   ]
 }
