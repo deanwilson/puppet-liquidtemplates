@@ -1,5 +1,8 @@
 # Liquid Templates in Puppet Function #
 
+[![Build Status](https://travis-ci.org/deanwilson/puppet-liquidtemplates.svg?branch=master)](https://travis-ci.org/deanwilson/puppet-liquidtemplates)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/deanwilson/liquidtemplates.svg)](https://forge.puppetlabs.com/deanwilson/liquidtemplates)
+
 Liquid is a 'Ruby library for rendering safe templates which cannot
 affect the security of the server they are rendered on.' This function
 allows you to write your templates using Liquid -
