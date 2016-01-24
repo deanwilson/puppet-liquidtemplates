@@ -9,13 +9,9 @@ module Puppet::Parser::Functions
     Does not support inline templates. On purpose.
   EOD
   ) do |files|
-
     raise Puppet::ParseError, 'No template file supplied to liquid_template' if files.empty?
 
     files.collect do |file|
-      template_file = nil
-
-
       Puppet.debug "Processing #{file} with liquid_template"
 
       template_file = Puppet::Parser::Files.find_template(file, self.compiler.environment)
@@ -24,13 +20,12 @@ module Puppet::Parser::Functions
       # expose our scope to the templates content.
       exposed_vars = {}
       self.to_hash.each do |name, value|
-        realname = name.gsub(/[^\w]/, "_")
+        realname = name.gsub(/[^\w]/, '_')
         exposed_vars[realname] = value
       end
 
       template_content = ::Liquid::Template.parse(File.new(template_file).read)
       template_content.render(exposed_vars)
-
-    end.join("")
+    end.join('')
   end
 end
