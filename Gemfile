@@ -7,6 +7,7 @@ group :development, :test do
   gem 'puppetlabs_spec_helper'
   gem 'json'
   gem 'liquid'
+  gem 'rubocop', '~> 0.36.0', require: false
 end
 
 if puppetversion = ENV['PUPPET_GEM_VERSION']
