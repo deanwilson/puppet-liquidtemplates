@@ -28,6 +28,12 @@ More details can be found in the
 Note:
 This function requires the liquid gem to be available on the puppetmaster. Which you are managing via puppet, right?
 
+## Installation
+
+You can install this module from [PuppetForge](https://forge.puppet.com/):
+
+    puppet module install deanwilson-liquidtemplates
+
 ### License ###
 
 GPL v2.0 - [Dean Wilson](http://www.unixdaemon.net)
