@@ -6,7 +6,7 @@ group :development, :test do
   gem 'rspec', '~> 3.5.0'
   gem 'puppetlabs_spec_helper', '~> 1.1.1'
   gem 'json'
-  gem 'liquid'
+  gem 'liquid', '~> 3.0.0'
   gem 'rubocop', '~> 0.36.0', require: false
 end
 
