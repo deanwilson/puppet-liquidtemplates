@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 group :development, :test do
   gem 'rake', '~> 11.2.0'
-  gem 'rspec', '~> 3.5.0'
+  gem 'rspec', '~> 3.9.0'
   gem 'puppetlabs_spec_helper', '~> 2.14.1'
   gem 'json'
   gem 'liquid', '~> 3.0.0'
